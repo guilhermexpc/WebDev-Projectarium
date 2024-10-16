@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="projetoA-container"></div>
+
+    <script>
+        // Função para carregar o conteúdo do index.html do projeto A
+        fetch('projects/relogio-digital/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('projetoA-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o projeto A:', error));
+    </script>
+</body>
+</html>
