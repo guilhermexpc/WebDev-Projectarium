@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="style.css">
   <title>Juros Compostos</title>
 </head>
@@ -11,7 +13,7 @@
 <body>
   <main id="container">
     <div id="calculator">
-      <h2>Calculadora de Juros</h2>
+      <h2 id="h22">Calculadora de Juros</h2>
 
       <div id="input_box">
         <div class="input-field">
@@ -32,10 +34,10 @@
 
       <div id="feeType">
         <label>
-          <input type="radio" name="radioFee" value="0"  checked><span>Juros Simples</span>
+          <input type="radio" name="radioFee" value="0" checked><span>Juros Simples</span>
         </label>
         <label>
-            <input type="radio" name="radioFee" value="1"><span>Juros Compostos</span>
+          <input type="radio" name="radioFee" value="1"><span>Juros Compostos</span>
         </label>
       </div>
 
@@ -51,7 +53,7 @@
       </button>
 
     </div>
-  </main>  
+  </main>
   <script src="script.js"></script>
 </body>
 
