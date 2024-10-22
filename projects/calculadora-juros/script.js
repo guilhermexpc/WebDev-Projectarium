@@ -4,6 +4,16 @@ const eTime = document.getElementById("time");
 const eTotal = document.getElementById("total");
 const feeType = document.getElementsByName("radioFee");
 
+eFee.addEventListener('input', function() {  
+  this.value = this.value.replace(/[,.]/g, '');
+});
+
+eTime.addEventListener('input', (event) => removeComma(event.target));
+
+function removeComma(input) {
+  input.value = input.value.replace(/[,.]/g, '');  
+}
+
 function jurosCompostos() {
   const value = eInitialValue.value;
   const fee = eFee.value / 100;
