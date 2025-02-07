@@ -5,7 +5,8 @@ const segundos = document.getElementById("segundos");
 const dia = document.getElementById("dia");
 const mes = document.getElementById("mes");
 const ano = document.getElementById("ano");
-let angle = 5; // Ângulo inicial
+const bakcground = document.body.style.background;
+let angle = 120; // Ângulo inicial
 
 function setHours() {
   let dateToday = new Date();
@@ -33,16 +34,16 @@ setInterval(() => {
   setHours();
 })
 
-// setInterval(updateBackground, 100);
+setInterval(updateBackground, 200);
 
 function updateBackground() {
-  // Atualiza o background com o ângulo atual
+  // Atualiza o background com o ângulo atual  
   document.body.style.background = `linear-gradient(${angle}deg, var(--bg-main), var(--bg-detail))`;
 
   // Incrementa o ângulo
   angle += 5;
   // Reseta o ângulo se ultrapassar 360 graus
   if (angle >= 360) {
-      angle = 0; // Retorna ao ângulo inicial
+    angle = 0; // Retorna ao ângulo inicial
   }
 }
