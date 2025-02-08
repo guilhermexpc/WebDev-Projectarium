@@ -6,24 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Regra de três simples</title>
   <link rel="stylesheet" href="../../css/reset.css">
-
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
-    <h1>Regra de Três</h1>
+    <h1 id="title">Regra de Três</h1>
+
     <div class="input-container">
-      <input type="number" id="number1">
-      <span>está para</span>
-      <input type="text" id="number1Reference">
+      <div class="input-container-group">
+        <input type="number" id="baseValue" placeholder="Valor A">
+        <span>está para</span>
+        <input type="text" id="proportionalBaseValue" placeholder="Valor B">
+      </div>
+
+      <p id="input-text">Assim como</p>
+
+      <div class="input-container-group">
+        <input type="number" id="refValue" placeholder="Valor C">
+        <span>está para</span>
+        <input type="text" id="proportionalRefValue" placeholder="?" disabled>
+      </div>
     </div>
-    <div class="input-container">
-      <input type="number" id="number2">
-      <span>está para</span>
-      <input type="text" id="number2Reference">
-    </div>
+
     <button id="calculate">Calcular</button>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

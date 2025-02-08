@@ -38,6 +38,7 @@ function CalcularJuros() {
 }
 
 document.getElementById("calculate").addEventListener("click", CalcularJuros);
+
 feeType.forEach(element => {
   element.addEventListener("click", CalcularJuros);
 });

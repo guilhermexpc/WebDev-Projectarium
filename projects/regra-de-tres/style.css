@@ -1,0 +1,92 @@
+:root {
+  --color-primary-1: #ffe53bd8;
+  --color-primary-2: #ff6a25da;
+  --color-primary-3: #766560da;
+
+  --color-neutral-1: #e5e7eb;
+  --color-neutral-2: #343434;
+  --color-neutral-3: #262626;
+
+  --linear-gradient: linear-gradient(180deg, var(--color-primary-1), var(--color-primary-2));
+  --linear-gradient-2: linear-gradient(120deg, var(--color-primary-1), var(--color-primary-2));
+}
+
+* {
+  box-sizing: border-box;
+  /* Q */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: grey;
+  background: var(--linear-gradient);
+}
+
+.container {
+  background-color: var(--color-neutral-3);
+  color: var(--color-neutral-1);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.33);
+  border-radius: 6px;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.input-container {
+  margin: 25px 0;
+}
+
+.input-container input {
+  background-color: var(--color-neutral-2);
+  color: var(--color-neutral-1);
+  border: 1px solid var(--color-primary-1);
+  border-radius: 8px;
+  width: 100px;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-container input::placeholder {
+  color: var(--color-neutral-1);
+  opacity: 0.6;
+  /* font-weight: bold; */
+}
+
+.input-container-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container-group span {
+  background-color: var(--color-neutral-2);
+  padding: 3px 15px;
+}
+
+.input-container-group input:focus-visible {
+  outline: transparent;
+}
+
+#input-text {
+  margin: 16px 0;
+}
+
+#calculate {
+  background: var(--linear-gradient-2);
+  border: none;
+  color: var(--color-neutral-1);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color .5s ease;
+}
+
+#calculate:hover {
+  background-color: rgb(177, 16, 16);
+}
