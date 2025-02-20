@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main id="container">
+    <section id="img">
+      <img src="assets/imagens/health.svg" alt="">
+    </section>
+
+    <section id="calculator">
+      <form id="main-form">
+        <h2 id="calculator-title">Calculadora - IMG</h2>
+        <div class="input-box">
+          <label for="weight">Peso em Kg</label>
+          <div class="input-field">
+            <i class="fa-solid fa-weight-scale"></i>
+            <input type="number" class="text-underline" id="weight" placeholder="70,500" required>
+            <span class="underline"></span>
+            <span>Kg</span>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="height">Altura em Metros</label>
+          <div class="input-field">
+            <i class="fa-solid fa-ruler"></i>
+            <input type="number" id="height" placeholder="1,84" required>
+            <span>m</span>
+          </div>
+        </div>
+
+        <button id="btn-calculate">
+          Calcular
+        </button>
+      </form>
+
+      <div id="information">
+        <div id="result">
+          <div id="imc">           
+            <span id="imc-value">64,32</span>
+          </div>
+          <div id="imc-description">
+            Você esta no peso ideal
+          </div>
+        </div>
+        <div id="more-information">
+          <a href="https://www.terra.com.br/saude/infograficos/imc/">Mais informações sobre o IMC
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
