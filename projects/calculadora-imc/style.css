@@ -1,8 +1,11 @@
 :root {
   --purple-main: #7062fd;
+  --purple-light: #715ef5;
   --gray-detail: #afafaf;
   --warning: #fa5a5a;
   --success: #4bd163;
+
+
 
 }
 
@@ -17,7 +20,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #202020;
-  padding: 1rem;
+  background: linear-gradient(180deg, rgb(24, 21, 54) 13%, rgba(112, 98, 253, 1) 100%);
 }
 
 #container {
@@ -25,7 +28,7 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 10%;
+  gap: 8%;
 }
 
 #img img {
@@ -36,11 +39,16 @@ body {
 #calculator {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 3em;
   color: #ffffff;
-  background-color: #303030;
+  background-color: #38307e;
   border-radius: 8px;
   gap: 2rem;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.46);
+
+
 }
 
 #main-form {
@@ -49,7 +57,7 @@ body {
 }
 
 #calculator-title {
-  font-size: 2rem;
+  font-size: 2.0rem;
   font-weight: bold;
   position: relative;
 }
@@ -74,7 +82,7 @@ form .input-box {
   align-items: center;
   justify-content: space-between;
   margin-top: 4px;
-  background-color: #4e4e4e;
+  background-color: var(--purple-main);
   padding: 0.6rem 0.8rem;
   border-radius: 4px;
   gap: 0.8rem;
@@ -195,4 +203,3 @@ form .input-box {
   font-size: 0.9rem;
   padding: 0 0 0 2px;
 }
-
