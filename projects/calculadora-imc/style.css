@@ -1,6 +1,9 @@
 :root {
   --purple-main: #7062fd;
   --gray-detail: #afafaf;
+  --warning: #fa5a5a;
+  --success: #4bd163;
+
 }
 
 * {
@@ -19,13 +22,15 @@ body {
 
 #container {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 10%;
 }
 
 #img img {
-  width: 32rem;
+  max-width: 32rem;
+  width: 100%;
 }
 
 #calculator {
@@ -111,7 +116,6 @@ form .input-box {
   cursor: pointer;
   padding: 0.4rem;
   margin-top: 1.8rem;
-  ;
   border: none;
   border-radius: 4px;
   font-weight: 600;
@@ -125,14 +129,17 @@ form .input-box {
   gap: 1rem;
 }
 
+#information.hidden {
+  display: none;
+}
+
 #result {
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding: 1rem;
+  justify-content: center;
+  padding: 1rem 0.6rem;
   border-top: 1px var(--gray-detail) solid;
   border-bottom: 1px var(--gray-detail) solid;
-
 }
 
 #result #imc {
@@ -142,18 +149,30 @@ form .input-box {
   /* background-color: red; */
 }
 
-#result #imc #imc-value {
+#result #imc-value {
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--purple-main);
+  padding-right: 0.6rem;
 }
+
+#result #imc-value.warning {
+  color: var(--warning);
+}
+
+#result #imc-value.success {
+  color: var(--success);
+}
+
 
 #result #imc-description {
   /* background-color: rgb(2, 23, 16);   */
+  width: 100%;
   text-align: center;
   flex-grow: 1;
   font-size: 0.75rem;
   font-weight: 400;
+  text-align: center;
 }
 
 #more-information {
@@ -165,9 +184,15 @@ form .input-box {
   color: var(--purple-main);
   text-decoration: none;
   margin-right: 8px;
+  transition: color 0.5s;
+}
+
+#more-information a:hover {
+  color: #ffffff
 }
 
 #more-information a>i {
   font-size: 0.9rem;
-  padding: 0 0 0 2px
+  padding: 0 0 0 2px;
 }
+

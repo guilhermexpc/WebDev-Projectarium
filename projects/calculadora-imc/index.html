@@ -26,7 +26,7 @@
           <label for="weight">Peso em Kg</label>
           <div class="input-field">
             <i class="fa-solid fa-weight-scale"></i>
-            <input type="number" class="text-underline" id="weight" placeholder="70,500" required>
+            <input type="number" class="text-underline" id="weight" placeholder="70,500" step="any" required>
             <span class="underline"></span>
             <span>Kg</span>
           </div>
@@ -35,7 +35,7 @@
           <label for="height">Altura em Metros</label>
           <div class="input-field">
             <i class="fa-solid fa-ruler"></i>
-            <input type="number" id="height" placeholder="1,84" required>
+            <input type="number" step="any" id="height" placeholder="1,84" required>
             <span>m</span>
           </div>
         </div>
@@ -45,9 +45,9 @@
         </button>
       </form>
 
-      <div id="information">
+      <div id="information" class="hidden">
         <div id="result">
-          <div id="imc">           
+          <div id="imc">
             <span id="imc-value">64,32</span>
           </div>
           <div id="imc-description">
@@ -55,16 +55,14 @@
           </div>
         </div>
         <div id="more-information">
-          <a href="https://www.terra.com.br/saude/infograficos/imc/">Mais informações sobre o IMC
+          <a href="https://www.tuasaude.com/imc/" target="_blank ">Mais informações sobre o IMC
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
       </div>
-
     </section>
-
   </main>
-
+  <script src="script.js"></script>
 </body>
 
 </html>

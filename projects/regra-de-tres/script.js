@@ -7,6 +7,7 @@ const calculate = document.getElementById("calculate");
 function getProportionalValue() {
   resultValue.value = calculateProportionalValue(baseValue.value, proportionalBaseValue.value, refValue.value);
 
+
 }
 
 function calculateProportionalValue(base, proportionalBase, refValue) {
